@@ -4,13 +4,13 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer'
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'EdgePulse',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/ed_logo.png',
+  favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://edgepulseio.github.io',
@@ -21,7 +21,8 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'edgepulseio', // Usually your GitHub org/user name.
-  projectName: 'edgepulseio',
+  projectName: 'docs',
+  trailingSlash: false,
 
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
@@ -129,6 +130,6 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
-};
+}
 
-export default config;
+export default config
