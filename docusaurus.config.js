@@ -27,6 +27,18 @@ const config = {
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-pages',
+      {
+        id: 'custom-404',
+        path: 'src/pages',
+        routeBasePath: '/',
+        include: ['**/*.js'], // Matches one level only
+      },
+    ],
+  ],
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
