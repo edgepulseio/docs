@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Congratulations!
 
 You have just installed and integrated the **EdgePulse** on **iOS**.
